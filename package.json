@@ -1,23 +1,33 @@
 
 {
-    "name": "TechdegreeProject6_Portfolio",
-    "version": "1.0.0",
-    "description": "Portfolio Site",
-    "main": "app.js",
-    "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1",
-      "start": "node app.js"
-    },
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
-    "dependencies": {
-      "body-parser": "^1.18.3",
-      "cookie-parser": "^1.4.4",
-      "express": "^4.16.4",
-      "node": "^11.10.0",
-      "nodemon": "^1.18.10",
-      "pug": "^2.0.3",
-      "routes": "^2.1.0"
-    }
+  "name": "node.jsexpress",
+  "version": "1.0.0",
+  "description": "Portfolio Website",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nataliehitchcock/Static-Node.js-and-Express-Site_Project-6"
+  },
+  "author": "averi johnson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nataliehitchcock/Static-Node.js-and-Express-Site_Project-6/issues"
+  },
+  "engines":{
+    "node": "12.16.1"
+  },
+  "homepage": "https://github.com/nataliehitchcock/Static-Node.js-and-Express-Site_Project-6#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.4",
+    "express": "^4.17.1",
+    "pug": "^2.0.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
   }
+}
