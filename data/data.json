@@ -1,0 +1,71 @@
+{
+    "data": {
+        "title": "NatalieHitchcockPortfolio",
+        "projects": [
+            {
+                "id": "0",
+                "project_name": "Project 1: A Random Quote Generator",
+                "description": "Practice your knowledge of basic JavaScript syntax and data structures by building a Random Quote Generator, a program that displays a randomly selected quote each time the user clicks a button.",
+                "technologies": ["HTML", 
+                                    "CSS", 
+                                    "JavaScript"],
+                "live_link": " https://nataliehitchcock.github.io/Random-Quote-Generator_Project-1/",
+                "github_link": "https://github.com/nataliehitchcock/Random-Quote-Generator_Project-1",
+                "image_urls": ["/static/images/Project-01A.png", 
+                                "/static/images/Project-01B.png" ]
+            },
+            {
+                "id": "1",
+                "project_name": "Project 2: List Pagination and Filtering",
+                "description": "Long lists don't make for a good user experience on a web page. In this project, you'll enhance the usability of a web page that contains a long list by employing JavaScript to dynamically divide the list into pages. As a bonus challenge, you'll add a search feature to display only the students that match specific search criteria.",
+                "technologies": ["HTML", 
+                                    "CSS", 
+                                    "JavaScript"],
+                "live_link": "https://nataliehitchcock.github.io/List-Pagination-and-Filtering_Project-2/",
+                "github_link": "https://github.com/nataliehitchcock/List-Pagination-and-Filtering_Project-2",
+                "image_urls": ["/static/images/Project-02A.png", 
+                                "/static/images/Project-02B.png"]
+            },
+            {
+                "id": "2",
+                "project_name": "Project 3: Interactive Form",
+                "description": "Full Stack JavaScript developers create forms to collect information from users for nearly every website and application they build. For this project, you’ll use your skills to enhance a form so that it’s engaging, interactive, and easy to use.",
+                "technologies": ["HTML", 
+                                    "CSS", 
+                                    "JavaScript", 
+                                    "jQuery"],
+                "live_link": "https://nataliehitchcock.github.io/Interactive-Form_Project-3/",
+                "github_link": "https://github.com/nataliehitchcock/Interactive-Form_Project-3",
+                "image_urls": ["/static/images/Project-03A.png", 
+                                "/static/images/Project-03B.png"]
+            },
+            {
+                "id": "3",
+                "project_name": "Project 4: OOP Game Show App",
+                "description": "Create a browser-based, word guessing game: Phrase Hunter. You’ll use JavaScript and OOP (Object-Oriented Programming) to select a random, hidden phrase. A player tries to guess the phrase by selecting individual letters from an onscreen keyboard. Can they guess the phrase before they run out of attempts?",
+                "technologies": ["HTML", 
+                                    "CSS", 
+                                    "JavaScript", 
+                                    "jQuery"],
+                "live_link": "https://nataliehitchcock.github.io/Game-Show-App_Project-4/",
+                "github_link": "https://github.com/nataliehitchcock/Game-Show-App_Project-4",
+                "image_urls": ["/static/images/Project-04A.png", 
+                                "/static/images/Project-04B.png"]
+            },
+            {
+                "id": "4",
+                "project_name": "Project 5: Public API Requests",
+                "description": "Many sites — Twitter, Facebook, IMDB, and Wikipedia to name a few — offer a vast sea of data that you can access and display on your own web pages. Using JavaScript, you’ll create an employee directory by communicating with a third-party API (Application Programming Interface).",
+                "technologies": ["HTML", 
+                                    "CSS", 
+                                    "JavaScript", 
+                                    "jQuery", 
+                                    "API"],
+                "live_link": "https://nataliehitchcock.github.io/Public-API-Request_Project-5/",
+                "github_link": "https://github.com/nataliehitchcock/Public-API-Request_Project-5",
+                "image_urls": ["/static/images/Project-05A.png", 
+                                "/static/images/Project-05B.png"]
+            }
+        ]
+    }
+}
