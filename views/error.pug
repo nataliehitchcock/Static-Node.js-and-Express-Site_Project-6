@@ -1,0 +1,13 @@
+extends layout.pug
+
+block content
+    nav.grid-container.portfolio-breadcrumb
+        a(href='/') ← Home
+    center
+        h1 Oh no! Something bad happened, so you're getting this error.
+        br
+        h4= error.message
+        br
+        h4= error.status
+    br
+    pre= error.stack
