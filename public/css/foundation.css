@@ -444,7 +444,7 @@ body {
   margin: 0;
   padding: 0;
   background: #fefefe;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Ruda", Helvetica, sans-serif;
   font-weight: normal;
   line-height: 1.5;
   color: #0a0a0a;
@@ -2500,7 +2500,7 @@ ul.no-bullet, ol.no-bullet {
   font-size: 0.9rem;
   line-height: 1;
   text-align: center;
-  cursor: pointer;
+  cursor: default;
   background-color: #1779ba;
   color: #fefefe; }
   [data-whatinput='mouse'] .button {
@@ -2519,6 +2519,20 @@ ul.no-bullet, ol.no-bullet {
     width: 100%;
     margin-right: 0;
     margin-left: 0; }
+  .button.contact {
+    display: block;
+    width: 100%;
+    background-color:  #8c4aa0;
+    color: #333;
+    font-weight: bold;
+    padding: 10px;
+    margin-right: 0;
+    margin-left: 0; 
+    cursor: pointer; }
+  .button.contact:hover {
+    background-color:  #462450;
+      color: rgb(126, 126, 126);
+  }
   .button.primary {
     background-color: #1779ba;
     color: #fefefe; }
@@ -2555,6 +2569,20 @@ ul.no-bullet, ol.no-bullet {
     .button.disabled, .button.disabled:hover, .button.disabled:focus, .button[disabled], .button[disabled]:hover, .button[disabled]:focus {
       background-color: #1779ba;
       color: #fefefe; }
+    .button.skills{
+      background-color:  #8c4aa0;
+      color: #333;
+      width: 100%;
+      font-weight: bold;
+      padding: 5px;
+    }
+    .button.skills:hover{
+      background-color:  #462450;
+      color: rgb(126, 126, 126);
+      width: 100%;
+      font-weight: bold;
+      padding: 5px;
+    }
     .button.disabled.primary, .button[disabled].primary {
       opacity: 0.25;
       cursor: not-allowed; }
@@ -4984,14 +5012,27 @@ table.hover:not(.unstriped) tr:nth-of-type(even):hover {
   .tabs-panel.is-active {
     display: block; }
 
-.thumbnail {
-  display: inline-block;
-  max-width: 100%;
-  margin-bottom: 1rem;
-  border: solid 4px #fefefe;
-  border-radius: 0;
-  box-shadow: 0 0 0 1px rgba(10, 10, 10, 0.2);
-  line-height: 0; }
+  .thumbnail {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 1rem;
+    border: solid 4px #fefefe;
+    border-radius: 0;
+    box-shadow: 0 0 0 1px rgba(10, 10, 10, 0.2);
+    line-height: 0; }
+
+  .thumbnail.profile {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 1rem;
+    border: solid 2px #8c4aa0;
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px #1f0a25;
+    line-height: 0; }
+  
+  .thumbnail:hover {
+    box-shadow: 3px 3px 5px #1f0a25;
+  }
 
 a.thumbnail {
   transition: box-shadow 200ms ease-out; }
@@ -5002,8 +5043,8 @@ a.thumbnail {
 
 .title-bar {
   padding: 0.5rem;
-  background: #0a0a0a;
-  color: #fefefe;
+  background: #462450;
+  color: #999;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: start;

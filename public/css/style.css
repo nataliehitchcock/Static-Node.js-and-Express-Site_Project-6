@@ -1,10 +1,10 @@
 
 h1,h2,h3,h4,h5,p{
-  font-family: 'Merriweather', serif;
+  font-family: "Ruda", Helvetica, sans-serif;
 }
 
   h5{
-    font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: "Ruda", Helvetica, sans-serif;
     letter-spacing: 2.5px;
     -webkit-text-transform: uppercase;
     text-transform: uppercase;
@@ -28,10 +28,11 @@ h1,h2,h3,h4,h5,p{
 
 .text-light{
   color: #666;
+  font-family: "Ruda", Helvetica, sans-serif;
 }
 
 .button{
-  background-color: #333;
+  background-color: rgb(27, 25, 25);
 }
 
 .button:hover{
@@ -58,7 +59,7 @@ a:hover{
 
 .portfolio-me{
   padding: 20px;
-  background: #121213;
+  background: #462450;
   color: #fff;
   box-shadow: none !important;
 }
@@ -69,9 +70,9 @@ a:hover{
   }
 
   .portfolio-me a{
-    font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: "Ruda", Helvetica, sans-serif;
     font-weight: 600;
-    color: #555;
+    color: rgb(126, 126, 126);
     font-size: 13px;
     letter-spacing: 2.5px;
     -webkit-text-transform: uppercase;
@@ -89,7 +90,7 @@ a:hover{
 }
 
  .portfolio-breadcrumb a{
-   font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+   font-family: "Ruda", Helvetica, sans-serif;
    font-weight: 600;
    font-size: 13px;
    letter-spacing: 2.5px;
@@ -99,12 +100,12 @@ a:hover{
 
 .portfolio-intro{
   margin: 0;
-  padding: 40px 50px 30px;
+  padding: 20px 50px 30px;
 }
 
 .portfolio-intro p{
   border-bottom: 1px solid #eaeaea;
-  padding-bottom: 40px;
+  padding-bottom: 10px;
 }
 
 .portfolio-index{
@@ -145,6 +146,9 @@ a:hover{
   color: #444;
 }
 
-.portfolio-bio{
+.portfolio-bio p{
+    font-family: "Ruda", Helvetica, sans-serif;
     line-height: 25px;
+    padding-right: 30px;
+    padding-left: 10px;
 }
