@@ -1,40 +1,39 @@
-// Creates a server
+// Require Methods
 const express = require('express');
+const bodyParser = require('body-parser');
+const cookieParser = require('cookie-parser');
 
-// Creates a new application
+// Call the Express Method
 const app = express();
 
+// Call and allow use of installed software
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(cookieParser());
+app.use('/static', express.static('public'));
 
-const port = process.env.PORT || 3000;
-
-// Tells express which template engine to use
+// Enable Express to use Pug
 app.set('view engine', 'pug');
 
-const mainRoutes = require('./routes');
-const aboutRoutes = require('./routes/about');
-const projectRoutes = require('./routes/project');
+
+//Require the routes folder
+const routes = require('./routes');
+app.use(routes);
 
 
-app.use(mainRoutes);
-app.use('/about', aboutRoutes);
-app.use('/project', projectRoutes);
-
-app.use('/static', express.static('public') );
-
+// 404 Error Handler
 app.use((req, res, next) => {
-  const err = new Error('Not Found');
-  err.status = 404;
-  console.log('404, page not found');
-  next(err);
-})
+    const error = new Error('Not Found');
+    error.status = 404;
+    next(error);
+  });
 
-app.use((err, req, res, next) => {
-  res.locals.error = err;
-  res.status(err.status);
-  res.render('error');
-})
+// Also 404 Error Handler
+app.use((error, req, res, next) => {
+    res.locals.error = error;
+    res.render('error')
+});
 
-// Tells server to run on users local machine
-app.listen(port, () => {
-  console.log(`The application is running on port ${port}`);
+// Start the Server
+app.listen(3000, () => {
+    console.log('The application is running on localhost:3000');
 });
